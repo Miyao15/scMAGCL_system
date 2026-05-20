@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.8.1-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## 项目简介
 
@@ -111,20 +110,7 @@ streamlit run app.py
 
 应用将在 `http://localhost:8501` 启动。
 
-### 命令行使用（直接模型推理）
 
-```bash
-python main.py --data_path './data/Baron.h5' \
-               --save_model_path './checkpoints' \
-               --n_clusters 14 \
-               --epochs 200
-```
-
-**参数说明:**
-- `--data_path`: scRNA-seq数据文件路径（H5格式）
-- `--save_model_path`: 模型保存路径
-- `--n_clusters`: 聚类簇数
-- `--epochs`: 训练轮数
 
 ### 工作流示例
 
@@ -153,8 +139,6 @@ scMAGCL-main/
 │   ├── 0_Register.py       # 注册页面
 │   ├── 1_Create_Workflow.py# 工作流创建页面
 │   └── 2_Explorer.py       # 结果浏览页面
-├── baseline/               # 基准模型（可选）
-├── data/                   # 数据存储目录
 └── save_file/              # 模型保存目录
 ```
 
